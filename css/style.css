@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #9D9898;
+}
+.container{
+  margin: 300px auto;
+  background-color: #d2d2d2;
+  width: auto;
+}
+.box-text{
+  justify-content: center;
+  display: flex;
+  align-items: center ;
+  position: relative;
+}
+p{
+  padding: 30px;
+  font-weight: bold;
+  font-size: 45px;
+}
+
+.stick{
+  position: absolute;
+  right: -1px;
+  background-color: #d2d2d2;
+  border-left: 2px solid #000;
+  height: 80px;
+  width: 100%;
+  transition: width 5s;
+}
+
+.box-text:hover .stick{
+  transition-timing-function: ease-in;
+  width: 0%;
+}
